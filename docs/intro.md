@@ -118,3 +118,29 @@ npx jest --coverage
       Logs key performance metrics (FCP, LCP, CLS, TTFB) to the browser console
 
     ![image info](../static/img/frontend-obs.jpg)
+
+### Docker file
+Download the docker images
+
+Use the following yaml file to run it
+
+```bash
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    container_name: roman_numeral_backend_container
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+  frontend:
+    build: ./frontend
+    container_name: roman_numeral_frontend_container
+    ports:
+     - '3000:3000'
+    stdin_open: true
+    tty: true
+    
+```
