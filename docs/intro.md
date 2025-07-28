@@ -12,6 +12,9 @@ The code is written with create-react-app on front end and node.js and express o
 
 ⚡️Backend is live  **[here](https://roman-number-backend.vercel.app/romannumeral?query=40)**
 
+![image info](../static/img/light.jpg)
+![image info](../static/img/dark.jpg)
+
 ## Getting Started
 
 Clone both Frontend and Backend from the github page [here](https://github.com/Sandesh-bn/roman-numeral-frontend) and [here](https://github.com/Sandesh-bn/roman-number-backend)
